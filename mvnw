@@ -1,4 +1,3 @@
-```bash
 #!/bin/sh
 
 # ----------------------------------------------------------------------------
@@ -11,11 +10,3 @@ else
   echo "Could not find .mvn/wrapper/maven-wrapper.jar"
   exit 1
 fi
-```
-
-Make sure it's executable:
-```bash
-chmod +x mvnw
-```
-
----
