@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: url-shortener-api
+    env: java
+    plan: free
+    buildCommand: "./mvnw clean package -DskipTests"
+    startCommand: "java -jar target/url-shortener-1.0.0.jar"
+    envVars:
+      - key: SPRING_DATA_MONGODB_URI
+        sync: false
