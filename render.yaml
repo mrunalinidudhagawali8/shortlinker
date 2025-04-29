@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: url-shortener-api
-    runtime: docker
-    plan: free
-    dockerfilePath: ./Dockerfile
-    envVars:
-      - key: SPRING_DATA_MONGODB_URI
-        sync: false
