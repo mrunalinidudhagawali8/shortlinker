@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.RedirectView;
 
+@CrossOrigin(origins = "https://mrunalinidudhagawali8.github.io/")
 @RestController
 @RequestMapping("/api")
 public class UrlShortenerController {
