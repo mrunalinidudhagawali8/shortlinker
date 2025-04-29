@@ -1,12 +1,10 @@
 @echo off
-setlocal
 
-set MAVEN_VERSION=3.9.6
+set WRAPPER_JAR="%~dp0\.mvn\wrapper\maven-wrapper.jar"
 
-if not exist ".mvn\wrapper\maven-wrapper.jar" (
-  echo Downloading Maven %MAVEN_VERSION% ...
-  mkdir .mvn\wrapper
-  powershell -Command "(New-Object Net.WebClient).DownloadFile('https://repo.maven.apache.org/maven2/io/takari/maven-wrapper/0.5.6/maven-wrapper-0.5.6.jar','.mvn\wrapper\maven-wrapper.jar')"
+if exist %WRAPPER_JAR% (
+  java -jar %WRAPPER_JAR% %*
+) else (
+  echo Could not find Maven Wrapper Jar.
+  exit /b 1
 )
-
-java -jar .mvn\wrapper\maven-wrapper.jar %*
