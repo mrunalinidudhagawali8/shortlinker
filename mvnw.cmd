@@ -1,5 +1,3 @@
-
-```batch
 @echo off
 
 set WRAPPER_JAR="%~dp0\.mvn\wrapper\maven-wrapper.jar"
@@ -10,6 +8,3 @@ if exist %WRAPPER_JAR% (
   echo Could not find Maven Wrapper Jar.
   exit /b 1
 )
-```
-
----
